@@ -89,6 +89,8 @@ nav li a{
 
 .banner{
     display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
 }
 .banner-content{
     max-width: 580px;
@@ -230,8 +232,24 @@ footer input[type"text"], footer input[type"email"].footer textarea{
 }
 
 @media screen and (max-width:576px) {
-    .about-items,.skills-conainer,.resume-container,footer{
+    .banner,
+    .about-items,
+    .skills-conainer,
+    .resume-container,
+    nav,
+    nav > ul,
+    footer{
         flex-direction: column;
+    }
+
+    nav > ul{
+        gap: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .header{
+        background-image: none;
     }
     footer , .about{
         padding: 20px;
@@ -241,6 +259,13 @@ footer input[type"text"], footer input[type"email"].footer textarea{
     }
   footer input[type"text"], footer input[type"email"].footer textarea{
     width: calc(100% - 40px);
+  }
+  .banner-profilepicture{
+    width: 100%;
+    
+  }
+  .btn-primary{
+    margin-bottom: 12px;
   }
 }
 
